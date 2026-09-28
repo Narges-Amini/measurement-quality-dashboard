@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurement Quality Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+        <dive class="container">  
+            <h1>Measurement Quality Dashboard</h1>
+            <p>Quality Control &amp; Metrology</p>
+        </div>
+    </header>
+
+    <main>
+        <section class= 'overview'>
+            <h2>Measurement Overview</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Total Measurements</h3>
+                    <p>250</p>
+                </article>
+                <article class="card">
+                    <h3>Passed</h3>
+                    <p>232</p>
+                </article>
+                <article class="card">
+                    <h3>Failed</h3>
+                    <p>18</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CURRENT -->
+        <section class='measurement'>
+            <h2>Recent measurements</h2>
+            <table class=".table">
+                <thead>
+                    <tr>
+                        <th>Measurement ID</th>
+                        <th>Nominal (mm) </th>
+                        <th>Actual (mm)</th>
+                        <th>Error (mm)</th>
+                        <th>Status</th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M001</td>
+                        <td>10.00</td>
+                        <td>10.02</td>
+                        <td>+0.02</td>
+                        <td class="status-pass">PASS</td>
+                    </tr>
+
+                    <tr>
+                        <td>M002</td>
+                        <td>10.00</td>
+                        <td>9.94</td>
+                        <td>-006</td>
+                        <td class="status-pass">PASS</td>
+                    </tr>
+                    <tr>
+                        <td>M003</td>
+                        <td>10.00</td>
+                        <td>10.15</td>
+                        <td>+0.15</td>
+                        <td class="status-fail">FAIL</td>
+                    </tr>
+                    <tr>    
+                        <td>M004</td>
+                        <td>10.00</td>
+                        <td>9.98</td>
+                        <td>-0.02</td>
+                        <td class="status-pass">PASS</td>
+                    </tr>
+                    <tr>
+                        <td>M005</td>
+                        <td>10.00</td>
+                        <td>10.07</td>
+                        <td>+0.07</td>
+                        <td class="status-pass">PASS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        Measurement Quality Lab
+    </footer>
+  </body>
+</html>
